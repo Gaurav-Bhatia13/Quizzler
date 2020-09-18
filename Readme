@@ -1,0 +1,5 @@
+DESCRIPTION:
+Quizzler is an app made using flutter and dart programming language. It contains 4 questions with each having options TRUE or FALSE.For each correct answer you choose, 
+a right icon adds at the bottom, and for each incorrect answer, a wrong icon adds at the bottom.
+when you reach at the end of the quiz, a pop-up shows up with a message 'Finished' and asks the user-" Do you want to Quit?". if the user presses cancel, it will redirect the user to
+the first question clearing the scorekeeper.
