@@ -12,7 +12,7 @@ class Quizzler extends StatelessWidget {
         backgroundColor: Colors.grey.shade900,
         body: SafeArea(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 10.0),
+            padding: EdgeInsets.symmetric(horizontal: 15.0),
             child: QuizPage(),
           ),
         ),
@@ -66,12 +66,12 @@ class _QuizPageState extends State<QuizPage> {
           child: Padding(
             padding: EdgeInsets.all(15.0),
             child: FlatButton(
-              textColor: Colors.white,
+              textColor: Colors.black87,
               color: Colors.green,
               child: Text(
                 'True',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black87,
                   fontSize: 20.0,
                 ),
               ),
@@ -109,7 +109,7 @@ class _QuizPageState extends State<QuizPage> {
               child: Text(
                 'False',
                 style: TextStyle(
-                  fontSize: 20.0,
+                  fontSize: 35.0,
                   color: Colors.white,
                 ),
               ),
@@ -126,7 +126,7 @@ class _QuizPageState extends State<QuizPage> {
                 setState(() {
                   if(questionno==3)
                   {
-                    Alert(context: context, title: "FINISHED", desc: "WANT TO QUIT?").show();
+                    Alert(context: context, title: "FINISHED", desc: "QUIT?").show();
                     questionno=0;
                     scorekeeper=[];
                   }
